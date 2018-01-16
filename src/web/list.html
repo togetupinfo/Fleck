@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="js/jquery.js"></script>
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="js/react-bootstrap-table.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/react-bootstrap-table.min.css" rel="stylesheet" />
+    <style type="text/css">
+        body {
+            font-size: 20px;
+        }
+
+        .dengji {
+            background-color: #FFFFBB;
+        }
+
+        .shenhe {
+            background-color: #FFB3FF;
+        }
+    </style>
+    <title></title>
+
+</head>
+<body>
+    <div id="app"></div>
+
+    <input type="button" value="添加数据" onclick="add()" />
+    <script type="text/javascript">
+        var ReactBsTable = window.BootstrapTable;
+        var products = [];
+        var table = null;
+
+        setInterval(add, 5000);
+        function add() {
+            $.getJSON("patients1000.json", function (jsonobj) {
+                products = jsonobj;
+                //console.log(products.length);
+                table.setState({ data: products });
+                table.updater;
+            });
+
+        }
+
+
+
+        function trClassFormat(row, rowIndex) {
+            // row is the current row data
+            //console.log(row.PROCESS_STATUS_ID);
+            if (row.PROCESS_STATUS_ID == 7) {
+                return "shenhe";
+            } else {
+                return "dengji";
+            }
+        }
+        var options = {
+            onRowClick: function onRowClick(row) {
+                console.log(row);
+                //alert('You click row id: ' + row.PATIENT_NAME);
+            },
+            onRowDoubleClick: function onRowDoubleClick(row) {
+                console.log(row);
+                //alert('You double click row id: ' + row.PATIENT_NAME);
+            }
+
+        };
+        var selectRow = {
+            mode: 'radio',  // multi select
+            clickToSelect: true,
+            bgColor: '#BBFF66',
+            hideSelectColumn: true
+        };
+
+
+        var table = ReactDOM.render(
+            React.createElement(
+                BootstrapTable,
+                { data: products, height: "500px", width: "600px", hover: true, condensed: true, trClassName: trClassFormat, search: true, searchPlaceholder: "输入任意内容筛选...", options: options, selectRow: selectRow },
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "REGISTRATION_ID", isKey: true, dataAlign: "center", dataSort: true },
+                    "REGID"
+                ),
+
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "PATIENT_CARDCODE", dataSort: true, width: "130px" },
+                    "卡号"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "PATIENT_NAME", dataSort: true },
+                    "姓名"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "PATIENT_ADDRESS", dataSort: true },
+                    "地址"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "PROCESS_STATUS_ID", dataSort: true },
+                    "状态"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "PROCESS_NUM", dataSort: true },
+                    "流水号"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "MODALITY", dataSort: true },
+                    "MODALITY"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    {
+                        dataField: "STUDY_BODYPART", dataSort: true, width: "200px", tdStyle: { whiteSpace: 'normal' }
+                    },
+                    "检查部位"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "STUDYROOM_NAME", dataSort: true },
+                    "诊室"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "REGISTRATION_DATE", dataSort: true, width: "110px", tdStyle: { whiteSpace: 'normal', fontSize: "16px" } },
+                    "登记日期"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "REGISTER_TIME", dataSort: true, width: "110px", tdStyle: { whiteSpace: 'normal', fontSize: "16px" } },
+                    "报到日期"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "REQ_DOC_NAME", dataSort: true },
+                    "申请医生"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "STUDY_DOC_NAME", dataSort: true },
+                    "检查医生"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "STUDY_DEPT_NAME", dataSort: true },
+                    "检查科室"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "IMAGE_COUNT", dataSort: true },
+                    "图像"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "SUBMIT_DOC_SYS_NAME", dataSort: true },
+                    "报告医生"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "CHECK_DOC_SYS_NAME", dataSort: true },
+                    "审核医生"
+                ),
+                React.createElement(
+                    TableHeaderColumn,
+                    { dataField: "PRICE", dataSort: true },
+                    "费用"
+                )
+            ), document.getElementById("app"));
+
+
+    </script>
+</body>
+</html>

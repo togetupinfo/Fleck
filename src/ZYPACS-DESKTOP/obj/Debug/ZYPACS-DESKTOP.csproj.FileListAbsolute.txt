@@ -1,0 +1,10 @@
+D:\Documents\GitHub\Fleck\src\ZYPACS-DESKTOP\bin\Debug\ZYPACS-DESKTOP.exe.config
+D:\Documents\GitHub\Fleck\src\ZYPACS-DESKTOP\bin\Debug\ZYPACS-DESKTOP.exe
+D:\Documents\GitHub\Fleck\src\ZYPACS-DESKTOP\bin\Debug\ZYPACS-DESKTOP.pdb
+D:\Documents\GitHub\Fleck\src\ZYPACS-DESKTOP\obj\Debug\ZYPACS-DESKTOP.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\Fleck\src\ZYPACS-DESKTOP\obj\Debug\ZYPACS_DESKTOP.Form1.resources
+D:\Documents\GitHub\Fleck\src\ZYPACS-DESKTOP\obj\Debug\ZYPACS_DESKTOP.Properties.Resources.resources
+D:\Documents\GitHub\Fleck\src\ZYPACS-DESKTOP\obj\Debug\ZYPACS-DESKTOP.csproj.GenerateResource.Cache
+D:\Documents\GitHub\Fleck\src\ZYPACS-DESKTOP\obj\Debug\ZYPACS-DESKTOP.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Fleck\src\ZYPACS-DESKTOP\obj\Debug\ZYPACS-DESKTOP.exe
+D:\Documents\GitHub\Fleck\src\ZYPACS-DESKTOP\obj\Debug\ZYPACS-DESKTOP.pdb

@@ -1,0 +1,15 @@
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\bin\Debug\Fleck.Tests.dll
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\bin\Debug\Fleck.Tests.pdb
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\bin\Debug\Fleck.dll
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\bin\Debug\Moq.dll
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\bin\Debug\nunit.framework.dll
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\bin\Debug\nunit.mocks.dll
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\bin\Debug\pnunit.framework.dll
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\bin\Debug\Fleck.pdb
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\bin\Debug\Moq.pdb
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\bin\Debug\Moq.xml
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\bin\Debug\nunit.framework.xml
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\obj\Debug\Fleck.Tests.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\obj\Debug\Fleck.Tests.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\obj\Debug\Fleck.Tests.dll
+D:\Documents\GitHub\Fleck\src\Fleck.Tests\obj\Debug\Fleck.Tests.pdb

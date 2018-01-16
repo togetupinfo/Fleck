@@ -1,0 +1,6 @@
+D:\Documents\GitHub\Fleck\src\Fleck\bin\Debug\Fleck.dll
+D:\Documents\GitHub\Fleck\src\Fleck\bin\Debug\Fleck.pdb
+D:\Documents\GitHub\Fleck\src\Fleck\obj\Debug\Fleck.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Fleck\src\Fleck\obj\Debug\Fleck.dll
+D:\Documents\GitHub\Fleck\src\Fleck\obj\Debug\Fleck.pdb
+D:\Documents\GitHub\Fleck\src\Fleck\obj\Debug\Fleck.csprojResolveAssemblyReference.cache

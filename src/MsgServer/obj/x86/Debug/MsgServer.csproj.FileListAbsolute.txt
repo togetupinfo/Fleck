@@ -1,0 +1,13 @@
+D:\Documents\GitHub\Fleck\src\MsgServer\bin\Debug\Fleck.Samples.ConsoleApp.exe.config
+D:\Documents\GitHub\Fleck\src\MsgServer\bin\Debug\Fleck.Samples.ConsoleApp.exe
+D:\Documents\GitHub\Fleck\src\MsgServer\bin\Debug\Fleck.Samples.ConsoleApp.pdb
+D:\Documents\GitHub\Fleck\src\MsgServer\bin\Debug\Fleck.dll
+D:\Documents\GitHub\Fleck\src\MsgServer\bin\Debug\Fleck.pdb
+D:\Documents\GitHub\Fleck\src\MsgServer\bin\Debug\Dicom.pdb
+D:\Documents\GitHub\Fleck\src\MsgServer\bin\Debug\Dicom.xml
+D:\Documents\GitHub\Fleck\src\MsgServer\bin\Debug\Newtonsoft.Json.pdb
+D:\Documents\GitHub\Fleck\src\MsgServer\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\GitHub\Fleck\src\MsgServer\obj\x86\Debug\MsgServer.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\Fleck\src\MsgServer\obj\x86\Debug\MsgServer.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Fleck\src\MsgServer\obj\x86\Debug\Fleck.Samples.ConsoleApp.exe
+D:\Documents\GitHub\Fleck\src\MsgServer\obj\x86\Debug\Fleck.Samples.ConsoleApp.pdb

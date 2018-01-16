@@ -1,0 +1,9 @@
+D:\Documents\GitHub\Fleck\src\web\bin\web.dll.config
+D:\Documents\GitHub\Fleck\src\web\bin\web.dll
+D:\Documents\GitHub\Fleck\src\web\bin\web.pdb
+D:\Documents\GitHub\Fleck\src\web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Documents\GitHub\Fleck\src\web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Documents\GitHub\Fleck\src\web\obj\Debug\web.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\Fleck\src\web\obj\Debug\web.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Fleck\src\web\obj\Debug\web.dll
+D:\Documents\GitHub\Fleck\src\web\obj\Debug\web.pdb
