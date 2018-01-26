@@ -28,6 +28,7 @@ namespace Fleck.Samples.ConsoleApp
                         };
                     socket.OnMessage = message =>
                         {
+                         
                             JavaScriptSerializer js = new JavaScriptSerializer();
                             ImgObj imgobj = js.Deserialize<ImgObj>(message);
                             if (imgobj != null)
@@ -46,8 +47,8 @@ namespace Fleck.Samples.ConsoleApp
 
                                 DicomUtility.Bmp2Dcm(Pic_Path, Pic_Path.Replace("png", "dcm"), imgobj.Name, "F", imgobj.Age.ToString(), imgobj.ProcessNum, imgobj.Modality, imgobj.HospitalName,"US",DateTime.Now.ToString("yyyyMMdd"));
 
-                                string value = DicomUtility.GetValueByTag(Pic_Path.Replace("png", "dcm"), Dicom.DicomTag.SOPInstanceUID);
-
+                                string sopinstanceuid = DicomUtility.GetValueByTag(Pic_Path.Replace("png", "dcm"), Dicom.DicomTag.SOPInstanceUID);
+                                string patientid = DicomUtility.GetValueByTag(Pic_Path.Replace("png", "dcm"), Dicom.DicomTag.PatientID);
                                 try
                                 {
                                     DicomUtility.SendDcm(Pic_Path.Replace("png", "dcm"), "10.68.2.17", 104);
@@ -59,7 +60,7 @@ namespace Fleck.Samples.ConsoleApp
                                     {
                                         if (sock.ConnectionInfo.ClientIpAddress== clientIp)
                                         {
-                                            sock.Send(value);
+                                            sock.Send("E:/dicom_files/US/" + DateTime.Now.ToString("yyyyMMdd") + "/" + patientid + "/" + sopinstanceuid);
                                         }
                                     }
                                     
